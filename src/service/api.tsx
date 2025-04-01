@@ -60,7 +60,6 @@ export const getDetailsMovie = (id: number, dispatch: any) => {
     dispatch,
     () => dispatch(setLoading(true)),
     (data) => {
-      console.log("Movie details:", data);
       dispatch(setCurrentMovie(data));
     },
     () => dispatch(setLoading(false))
