@@ -8,7 +8,7 @@ export const PopularContainer = styled(Container)`
 
   h2 {
     font-size: 2rem;
-    color: #333;
+    color: ${({ theme }) => theme.colors.text};
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: 600;
@@ -19,7 +19,7 @@ export const PopularContainer = styled(Container)`
       display: block;
       width: 80px;
       height: 4px;
-      background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+      background: ${({ theme }) => `linear-gradient(90deg, ${theme.colors.secondary}, ${theme.colors.lightBlue})`};
       margin: 0.5rem auto 0;
       border-radius: 2px;
     }
@@ -58,7 +58,7 @@ export const PaginationContainer = styled.div`
     padding: 0.5rem 1.25rem;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: ${({ theme }) => `linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.secondary})`};
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -67,8 +67,8 @@ export const PaginationContainer = styled.div`
     min-width: 100px;
 
     &:disabled {
-      background: #e0e0e0;
-      color: #a0a0a0;
+      background: ${({ theme }) => theme.colors.cardBg};
+      color: ${({ theme }) => theme.colors.textSecondary};
       cursor: not-allowed;
       box-shadow: none;
     }
@@ -85,18 +85,17 @@ export const PaginationContainer = styled.div`
 
   span {
     font-size: 1rem;
-    color: #555;
+    color: ${({ theme }) => theme.colors.textSecondary};
     font-weight: 500;
 
     strong {
-      color: #333;
+      color: ${({ theme }) => theme.colors.text};
       font-weight: 600;
     }
   }
 
   @media (max-width: 480px) {
     gap: 1rem;
-
     button {
       padding: 0.5rem 1rem;
       min-width: 80px;
@@ -115,24 +114,20 @@ export const LoadingContainer = styled.div`
   .spinner {
     width: 50px;
     height: 50px;
-    border: 5px solid #f3f3f3;
-    border-top: 5px solid #a777e3;
+    border: 5px solid ${({ theme }) => theme.colors.cardBg};
+    border-top: 5px solid ${({ theme }) => theme.colors.secondary};
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
 
   p {
-    color: #666;
+    color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 1.1rem;
   }
 
   @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 `;
 
@@ -142,12 +137,12 @@ export const EmptyState = styled.div`
 
   h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: ${({ theme }) => theme.colors.text};
     margin-bottom: 0.5rem;
   }
 
   p {
-    color: #666;
+    color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 1rem;
   }
 `;

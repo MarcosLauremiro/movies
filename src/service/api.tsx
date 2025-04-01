@@ -14,7 +14,7 @@ import {
 const api = axios.create({
   baseURL: "https://api.themoviedb.org/3",
   params: {
-    api_key: "117e814343e3a6bdea03037a6e862406",
+    api_key: import.meta.env.VITE_API_KEY,
     language: "pt_BR",
   },
 });

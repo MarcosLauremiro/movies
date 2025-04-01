@@ -44,7 +44,7 @@ export const PopularMovies: React.FC = () => {
 
   return (
     <PopularContainer>
-      <h2>Movies Populares</h2>
+      <h2>Movies Popular</h2>
       <ContainerMovies>
         {movies.map((movie, i) => (
           <CardMovie key={i} movie={movie} />
