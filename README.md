@@ -23,9 +23,9 @@ Siga estes passos para configurar e executar o projeto em sua máquina local:
 
 1. **Clonar o repositório**
 
-   ```bash
-   git clone [URL do repositório]
-   ```
+```bash
+git clone [URL do repositório]
+```
 
 2. **Acessar a pasta do projeto**
 
