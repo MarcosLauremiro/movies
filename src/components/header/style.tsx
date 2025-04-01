@@ -62,11 +62,12 @@ export const ContentSearch = styled.div`
   gap: 20px;
   align-items: center;
   width: 100%;
+  max-width: 600px;
   justify-content: center;
 
   @media (min-width: 768px) {
     justify-content: flex-end;
-    width: auto;
+    width: 40%;
   }
 `;
 
