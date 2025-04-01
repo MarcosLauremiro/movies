@@ -101,5 +101,5 @@ Abra seu navegador e acesse:
 └── README.md
 ```
 
-Desenvolvido com ❤️ por Marcos Lauremiro
+Desenvolvido com ❤️ por Marcos Lauremiro 31/03/2025
 <marcoslauremiro@gmail.com> | <https://github.com/MarcosLauremiro>
